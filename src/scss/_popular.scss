@@ -1,0 +1,17 @@
+.popular-movies {
+
+  .popular-movies-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .movie {
+      width: 10%;
+
+      .movie-poster {
+        border-radius: 10px;
+        width: 100%;
+      }
+    }
+  }
+}
