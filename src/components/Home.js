@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+// Config
 import {
   SEARCH_BASE_URL,
   POPULAR_BASE_URL,
@@ -7,7 +9,7 @@ import {
   IMAGE_BASE_URL
 } from "../config";
 
-// import Components
+// Components
 import HeroImage from "./elements/HeroImage";
 import SearchBar from "./elements/SearchBar";
 import Grid from "./elements/Grid";
@@ -18,6 +20,7 @@ import Spinner from "./elements/Spinner";
 // Custom Hook
 import { useHomeFetch } from "./hooks/useHomeFetch";
 
+// Images
 import NoImage from "../images/no_image.jpg";
 
 const Home = () => {
@@ -49,6 +52,8 @@ const Home = () => {
   if (error) return <div>Something went wrong ...</div>;
   if (!movies[0]) return <Spinner />;
 
+  // console.log(movies)
+
   return (
     <>
       {!searchTerm && (
@@ -60,7 +65,7 @@ const Home = () => {
       )}
       <SearchBar callback={searchMovies}/>
       <Grid header={searchTerm ? "Search Result" : "Popular Movies"}>
-        {movies.map(movie => (
+        {movies.map((movie, i) => (
           <MovieThumb
             key={movie.id}
             clickable

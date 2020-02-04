@@ -1,7 +1,16 @@
 import React from "react";
+
+// Packages
+import { Router } from "@reach/router";
 import { Helmet } from "react-helmet";
-import Header from "./elements/Header"
-import Home from "./Home"
+
+// Components
+import Header from "./elements/Header";
+import Home from "./Home";
+import Movie from "./Movie";
+import NotFound from "./NotFound";
+
+// Styles
 import { GlobalStyle } from "./styles/GlobalStyle";
 
 const App = () => {
@@ -21,9 +30,13 @@ const App = () => {
       </Helmet>
       <GlobalStyle />
       <Header />
-      <Home />
+      <Router>
+        <Home path="/" />
+        <Movie path="/:movieId" />
+        <NotFound default />
+      </Router>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,4 +1,9 @@
 import React, { useState, useRef } from "react";
+
+// Packages
+import PropTypes from 'prop-types'
+
+// Styled Components
 import {
   StyledSearchBar,
   StyledSearchBarContent
@@ -32,5 +37,9 @@ const SearchBar = ({ callback }) => {
     </StyledSearchBar>
   );
 };
+
+SearchBar.propTypes = {
+  callback: PropTypes.func
+}
 
 export default SearchBar;

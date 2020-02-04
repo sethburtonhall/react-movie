@@ -3,7 +3,7 @@ import { theme } from "./theme";
 
 export const StyledSpinner = styled.div`
   border: 5px solid #f3f3f3; /* Light grey */
-  border-top: 5px solid ${theme.darkBlue}; /* Blue */
+  border-top: 5px solid ${theme.green}; /* Blue */
   border-radius: 50%;
   width: 50px;
   height: 50px;

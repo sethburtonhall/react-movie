@@ -1,4 +1,6 @@
 import React from "react";
+
+// Styled Components
 import { StyledSpinner } from "../styles/StyledSpinner";
 
 const Spinner = () => {

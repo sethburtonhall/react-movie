@@ -1,7 +1,14 @@
 import React from "react";
+
+// Packages
+import { Link } from "@reach/router";
+
+
+// Images
 import logo from "../../images/logo.png";
 import tmdbLogo from '../../images/tmdb-logo.png';
 
+// Styled Components
 import {
   StyledHeader,
   StyledRMDBLogo,
@@ -12,8 +19,16 @@ const Header = () => {
   return (
     <StyledHeader>
       <div className="header-content">
-        <StyledRMDBLogo src={logo} alt="React Movie" />
-        <StyledTMDBLogo src={tmdbLogo} alt="TMDB Logo" /> 
+        <Link to="/">
+          <StyledRMDBLogo src={logo} alt="React Movie" />
+        </Link>
+        <a
+          href="https://www.themoviedb.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <StyledTMDBLogo src={tmdbLogo} alt="TMDB Logo" />
+        </a>
       </div>
     </StyledHeader>
   );
