@@ -11,7 +11,7 @@ const POPULAR_BASE_URL = `${API_URL}movie/popular?api_key=${API_KEY}`;
 // An image URL looks like this example:
 // http://image.tmdb.org/t/p/w780/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg
 
-const IMAGE_BASE_URL = "http://image.tmdb.org/t/p/";
+const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/";
 // Sizes: w300, w780, w1280, original
 const BACKDROP_SIZE = "w1280";
 // w92, w154, w185, w342, w500, w780, original
