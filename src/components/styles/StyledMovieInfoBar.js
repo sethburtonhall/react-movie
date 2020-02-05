@@ -12,7 +12,7 @@ export const StyledMovieInfoBar = styled.div`
          font-family: "Abel", sans-serif;
          font-size: 14px;
 
-         @media ${device.mobileUp} {
+         @media ${device.tabletUp} {
            font-size: 20px;
          }
 
@@ -39,7 +39,7 @@ export const StyledMovieInfoBar = styled.div`
          .fa-clock,
          .fa-money-bill-alt {
            float: left;
-           margin-top: -4px;
+           margin-top: 8px;
          }
 
          .fa-ticket-alt {
@@ -50,14 +50,16 @@ export const StyledMovieInfoBar = styled.div`
          .fa-clock,
          .fa-money-bill-alt,
          .fa-ticket-alt {
-           display: none;
+           font-size: 14px;
+           margin-top: 8px;
          }
 
          @media ${device.tabletUp} {
            .fa-clock,
            .fa-money-bill-alt,
            .fa-ticket-alt {
-             display: block;
+             font-size: 25px;
+             margin-top: 6px;
            }
          }
        `;

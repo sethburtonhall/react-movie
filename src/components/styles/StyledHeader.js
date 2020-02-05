@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "./theme" 
+import { theme } from "./theme";
 import { device } from "./MediaQueries";
 
 export const StyledHeader = styled.div`
@@ -8,25 +8,28 @@ export const StyledHeader = styled.div`
 
   .header-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 
     @media ${device.tabletUp} {
-      flex-direction: row;
       justify-content: space-between;
     }
   }
 `;
 
 export const StyledRMDBLogo = styled.img`
-  width: 250px;
-  margin-bottom: 30px;
+  width: 130px;
 
   @media ${device.tabletUp} {
-    margin: 0;
+    width: 250px;
   }
 `;
 
 export const StyledTMDBLogo = styled.img`
-  width: 107px;
+  width: 70px;
+
+  @media ${device.tabletUp} {
+    width: 107px;
+  }
 `;

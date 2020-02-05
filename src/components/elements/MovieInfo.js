@@ -41,7 +41,7 @@ const MovieInfo = ({ movie }) => (
               <p key={e.credit_id}>{e.name}</p>
             ))}
           </div>
-          <div className="crew">
+          {/* <div className="crew">
             <h3>WRITER{movie.writers.length > 1 ? "S" : ""}</h3>
             {movie.writers.map(e => (
               <p key={e.credit_id}>{e.name}</p>
@@ -52,7 +52,7 @@ const MovieInfo = ({ movie }) => (
             {movie.producers.map(e => (
               <p key={e.credit_id}>{e.name}</p>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
